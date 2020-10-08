@@ -8,3 +8,5 @@ const bookReducer = (state = [], actions) => {
       return state
   }
 }
+
+export default bookReducer
