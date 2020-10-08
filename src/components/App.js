@@ -5,6 +5,7 @@ import BooksForm from '../containers/BookForm'
 const App = () => {
   return (
     <div id="App">
+      <h1>BOOK STORE</h1>
       <BooksList />
       <BooksForm />
     </div>
