@@ -1,5 +1,6 @@
 import React from 'react';
 import { connect } from 'react-redux'
+import Book from '../components/Book'
 
 export default class BooksList extends React.Component {
   render(){
@@ -14,11 +15,7 @@ export default class BooksList extends React.Component {
             </tr>
           </thead>
           <tbody>
-            <tr>
-              <td>book1</td>
-              <td>book2</td>
-              <td>book3</td>
-            </tr>
+            <Book />
           </tbody>
         </table>
       </div>
