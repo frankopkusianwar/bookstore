@@ -1,18 +1,10 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './index.css';
-
-function HelloWorld() {
-  return (
-    <div>
-      <div>
-        <h1>Hello World!</h1>
-      </div>
-    </div>
-  );
-}
+import App from './components/App';
 
 ReactDOM.render(
-  <HelloWorld />,
+  <React.StrictMode>
+    <App />
+  </React.StrictMode>,
   document.getElementById('root'),
 );
