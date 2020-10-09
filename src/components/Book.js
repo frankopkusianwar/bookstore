@@ -1,12 +1,12 @@
 import React from 'react';
 import propTypes from 'prop-types';
 
-const Book = ({ book }) => (
+const Book = ({ book, removeBook }) => (
   <tr>
     <td>{ book.id }</td>
     <td>{ book.title }</td>
     <td>{ book.category }</td>
-    <td><button type="submit" onSubmit={this.handleSubmit}>Submit</button></td>
+    <td><button onClick={()=>removeBook(book)}>Remove Book</button></td>
   </tr>
 );
 
