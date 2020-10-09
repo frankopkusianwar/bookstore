@@ -1,5 +1,7 @@
+/* eslint-disable react/forbid-foreign-prop-types */
 import React from 'react';
 import { connect } from 'react-redux';
+import propTypes from 'prop-types';
 import Book from '../components/Book';
 
 const BooksList = ({ books }) => (
@@ -26,6 +28,10 @@ const BooksList = ({ books }) => (
 const mapStateToProps = state => ({
   books: state.books,
 });
+
+BooksList.propTypes = {
+  books: propTypes.objectOf(propTypes.books).isRequired,
+};
 
 const BooksListConnected = connect(mapStateToProps)(BooksList);
 

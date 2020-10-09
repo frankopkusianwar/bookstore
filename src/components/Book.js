@@ -1,4 +1,5 @@
 import React from 'react';
+import propTypes from 'prop-types';
 
 const Book = ({ book }) => (
   <tr>
@@ -7,5 +8,9 @@ const Book = ({ book }) => (
     <td>{ book.category }</td>
   </tr>
 );
+
+Book.propTypes = {
+  book: propTypes.objectOf(propTypes.book).isRequired,
+};
 
 export default Book;
