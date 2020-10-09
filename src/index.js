@@ -2,24 +2,24 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import { Provider } from 'react-redux';
 import { createStore } from 'redux';
-import './css/index.css'
+import './css/index.css';
 import App from './components/App';
 import rootReducer from './reducers/index';
 
 const initialState = {
   books: [
     {
-      id: Math.floor(Math.random() * 100),
+      id: Math.floor(Math.random() * 10),
       title: 'Ngugi Wa Thiongo',
       category: 'Learning',
     },
     {
-      id: Math.floor(Math.random() * 100),
+      id: Math.floor(Math.random() * 10),
       title: 'Biological Science',
       category: 'Learning',
     },
     {
-      id: Math.floor(Math.random() * 100),
+      id: Math.floor(Math.random() * 10),
       title: 'Romeo and Juliet',
       category: 'Learning',
     },
