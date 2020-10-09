@@ -1,5 +1,6 @@
 import React from 'react';
 import { connect } from 'react-redux';
+import shortid from 'shortid';
 import { createBook } from '../actions/index';
 
 class BookForm extends React.Component {
@@ -24,11 +25,12 @@ class BookForm extends React.Component {
     e.preventDefault();
     const { title, category } = this.state;
     const book = {
-      id: Math.floor(Math.random() * 100),
+      id: shortid.generate(),
       title,
       category,
     };
     createBook(book);
+    e.target.reset()
   }
 
   render() {
