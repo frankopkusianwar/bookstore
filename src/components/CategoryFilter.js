@@ -1,10 +1,5 @@
+const CategoryFilter = () => (
+  <form />
+);
 
-const CategoryFilter = () => {
-  return (
-    <form>
-      
-    </form>
-  )
-}
-
-export default CategoryFilter
+export default CategoryFilter;
