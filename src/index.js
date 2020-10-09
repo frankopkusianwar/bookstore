@@ -28,6 +28,8 @@ const initialState = {
 const store = createStore(
   rootReducer, initialState,
 );
+console.log(store.getState())
+
 
 ReactDOM.render(
   <React.StrictMode>

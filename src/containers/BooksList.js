@@ -31,4 +31,4 @@ const mapStateToProps = (state) => ({
 
 const BooksListConnected = connect(mapStateToProps)(BooksList)
 
-export default BooksList
+export default BooksListConnected
