@@ -2,6 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import { Provider } from 'react-redux';
 import { createStore } from 'redux';
+import './css/index.css'
 import App from './components/App';
 import rootReducer from './reducers/index';
 
@@ -28,8 +29,6 @@ const initialState = {
 const store = createStore(
   rootReducer, initialState,
 );
-console.log(store.getState())
-
 
 ReactDOM.render(
   <React.StrictMode>
