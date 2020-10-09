@@ -8,7 +8,7 @@ In this project I build a book store app using REACT and REDUX
 
 - organize and manage bookstore
 
-## Calculator Page
+## Bookstore Page
 ![screenshot]()
 
 ## Built With
@@ -69,7 +69,3 @@ Give a ⭐️ if you like this project!
 ## Acknowledgments
 
 - Microverse, standup team and the microverse community for helping build the skills that were used on this project
-
-## 📝 License
-
-This project is [MIT](lic.url) licensed.
