@@ -9,17 +9,17 @@ import rootReducer from './reducers/index';
 const initialState = {
   books: [
     {
-      id: Math.floor(Math.random() * 10),
+      id: Math.floor(Math.random() * 100),
       title: 'Ngugi Wa Thiongo',
       category: 'Learning',
     },
     {
-      id: Math.floor(Math.random() * 10),
+      id: Math.floor(Math.random() * 100),
       title: 'Biological Science',
       category: 'Learning',
     },
     {
-      id: Math.floor(Math.random() * 10),
+      id: Math.floor(Math.random() * 100),
       title: 'Romeo and Juliet',
       category: 'Learning',
     },
