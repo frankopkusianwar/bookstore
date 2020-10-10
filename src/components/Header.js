@@ -7,9 +7,9 @@ const Header = () => (
       <h1>BOOK STORE CMS</h1>
       <ul>
         <li><a href="#">Books</a></li>
-        <li><a href="#">Categories</a></li>
+        <li><a href="#" className="category">Categories</a></li>
       </ul>
-      <div><img src={profile} alt="profile picture"/></div>
+      <div className="profile"><img src={profile} alt="profile picture"/></div>
     </div>
   </div>
 );

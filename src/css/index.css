@@ -1,3 +1,36 @@
+.header {
+  display: flex;
+}
+
+.header h1 {
+  color: #0290ff;
+}
+
+.profile{
+  margin-left: auto;
+  margin-top: 8px;
+}
+
+ul {
+  display: flex;
+}
+
+ul li {
+  list-style: none;
+  margin-top: 12px;
+}
+
+ul li a {
+  font-size: 14px;
+  color: #121212;
+  padding: 0 20px;
+  text-decoration: none;
+}
+
+.category {
+  color: #999;
+}
+
 table {
   font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
   border-collapse: collapse;
