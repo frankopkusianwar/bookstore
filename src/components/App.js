@@ -1,10 +1,12 @@
 import React from 'react';
+import Header from '../components/Header'
 import BooksList from '../containers/BooksList';
 import BooksForm from '../containers/BooksForm';
+import profile from '../assets/profile.PNG'
 
 const App = () => (
   <div id="App">
-    <h1>BOOK STORE</h1>
+    <Header />
     <BooksList />
     <BooksForm />
   </div>
