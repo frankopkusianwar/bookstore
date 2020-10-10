@@ -1,4 +1,4 @@
-const filter = (state = 'All', action) => {
+const filterReducer = (state = 'All', action) => {
   switch (action.type) {
     case 'CHANGE_FILTER':
       return action.category;
@@ -7,4 +7,4 @@ const filter = (state = 'All', action) => {
   }
 };
 
-export default filter;
+export default filterReducer;
