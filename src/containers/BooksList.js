@@ -54,7 +54,7 @@ BooksList.propTypes = {
   books: propTypes.arrayOf(propTypes.object).isRequired,
   removeBook: propTypes.func.isRequired,
   changeFilter: propTypes.func.isRequired,
-  filter: propTypes.func.isRequired,
+  filter: propTypes.string.isRequired,
 };
 
 const BooksListConnected = connect(mapStateToProps, mapDispatchToProps)(BooksList);
