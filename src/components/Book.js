@@ -1,6 +1,6 @@
 import React from 'react';
 import propTypes from 'prop-types';
-import sixtyfour from '../assets/sixtyfour.PNG'
+import sixtyfour from '../assets/sixtyfour.PNG';
 
 const Book = ({ book, removeBook }) => (
   <div className="book">
@@ -9,13 +9,13 @@ const Book = ({ book, removeBook }) => (
       <h3 className="book-tt">{ book.title }</h3>
       <small className="author">Suzanne Collins</small>
       <div className="buttons">
-        <a href="#">Comments</a>
-        <a href="#" className="remove" onClick={() => removeBook(book)}>Remove</a>
-        <a href="#">Edit</a>
+        <small>Comments</small>
+        <button type="submit" className="remove" onClick={() => removeBook(book)}>Remove</button>
+        <small>Edit</small>
       </div>
     </div>
     <div className="percent">
-      <div><img src={sixtyfour} alt="percentage"/></div>
+      <div><img src={sixtyfour} alt="percentage" /></div>
       <div className="percent-text">
         <small>64%</small>
         <p>Completed</p>
@@ -24,7 +24,7 @@ const Book = ({ book, removeBook }) => (
     <div className="chapter">
       <small>CURRENT CHAPTER</small>
       <p>Chapter 17</p>
-      <button type='subit'>UPDATE PROGRESS</button>
+      <button type="submit">UPDATE PROGRESS</button>
     </div>
   </div>
 );
