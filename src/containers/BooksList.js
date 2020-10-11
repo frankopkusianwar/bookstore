@@ -13,25 +13,13 @@ const BooksList = ({
   };
 
   return (
-    <div id="table">
+    <div className="bookList">
       <CategoryFilter filter={changeFilter} />
-      <table>
-        <thead>
-          <tr>
-            <th>Id</th>
-            <th>Title</th>
-            <th>Category</th>
-            <th>Actions</th>
-          </tr>
-        </thead>
-        <tbody>
-          {books
-            .filter(book => (filter === 'All' ? true : book.category === filter))
-            .map(book => (
-              <Book book={book} key={book.id} removeBook={handleRemoveBook} />
-            ))}
-        </tbody>
-      </table>
+      {books
+        .filter(book => (filter === 'All' ? true : book.category === filter))
+        .map(book => (
+          <Book book={book} key={book.id} removeBook={handleRemoveBook} />
+        ))}
     </div>
   );
 };

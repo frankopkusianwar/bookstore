@@ -5,7 +5,7 @@ body {
   display: flex;
   padding: 18px;
   justify-content: center;
-  border-bottom: 1px solid rgb(170, 169, 169);
+  border-bottom: 0.2px solid rgb(170, 169, 169);
   background: white;
 }
 
@@ -38,31 +38,6 @@ ul li a {
   color: #999;
 }
 
-table {
-  font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
-  border-collapse: collapse;
-  width: 100%;
-  margin-bottom: 50px;
-}
-
-table td,
-table th {
-  border: 1px solid #ddd;
-  padding: 8px;
-}
-
-table tr:nth-child(even) { background-color: #f2f2f2; }
-
-table tr:hover { background-color: #ddd; }
-
-#table th {
-  padding-top: 12px;
-  padding-bottom: 12px;
-  text-align: left;
-  background-color: #4caf50;
-  color: white;
-}
-
 input,
 select {
   padding: 16px 32px;
@@ -77,25 +52,27 @@ select:focus {
 }
 
 button {
-  background-color: #4caf50;
   border: none;
-  color: white;
-  padding: 16px 32px;
+  /* padding: 16px 32px; */
   text-decoration: none;
-  margin: 4px 2px;
+  /* margin: 4px 2px; */
   cursor: pointer;
 }
 
 .remove {
-  background-color: red;
-  border: none;
-  color: white;
-  padding: 8px 16px;
-  text-decoration: none;
-  margin: 4px 2px;
-  cursor: pointer;
+  
 }
 
-table td:last-child {
-  text-align: center;
+.bookList {
+  width: 80%;
+  margin: 20px auto;
+}
+
+.book {
+  display: flex;
+  justify-content: space-between;
+  border: 0.2px solid rgb(170, 169, 169);
+  background: white;
+  margin: 10px 0;
+  padding: 10px;
 }

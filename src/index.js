@@ -10,18 +10,18 @@ const initialState = {
   books: [
     {
       id: 'cOcZoYKHk',
-      title: 'Ngugi Wa Thiongo',
-      category: 'Learning',
+      title: 'The Hunger Games',
+      category: 'Action',
     },
     {
       id: 'cOcZuOKHk',
-      title: 'Biological Science',
-      category: 'Learning',
+      title: 'Dune',
+      category: 'SCI-FI',
     },
     {
       id: 'cOcZoOKHf',
-      title: 'Romeo and Juliet',
-      category: 'Learning',
+      title: 'Capital in the Twenty-First Century',
+      category: 'Economy',
     },
   ],
 };
