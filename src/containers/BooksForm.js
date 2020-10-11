@@ -1,6 +1,7 @@
 import React from 'react';
 import { connect } from 'react-redux';
 import shortid from 'shortid';
+import propTypes from 'prop-types';
 import { createBook } from '../actions/index';
 
 class BookForm extends React.Component {
@@ -15,36 +16,34 @@ class BookForm extends React.Component {
   }
 
   handleChange(e) {
-    this.setState({
-      title: e.target.title,
-      category: e.target.category,
-    });
+    const { name, value } = e.target;
+    this.setState({ [name]: value });
   }
 
   handleSubmit(e) {
     e.preventDefault();
     const { title, category } = this.state;
+    const { createBook } = this.props;
     const book = {
       id: shortid.generate(),
       title,
       category,
     };
-    createBook(book);
+    if (title && category) {
+      createBook(book);
+    }
     e.target.reset();
   }
 
   render() {
+    const categories = ['Action', 'Biography', 'History', 'Horror', 'Kids', 'Learning', 'Sci-Fi'];
     return (
-      <form>
+      <form onSubmit={this.handleSubmit} onChange={this.handleChange}>
         <input placeholder="Book Title" type="text" id="title" name="title" onChange={this.handleChange} />
-        <select id="category" name="category">
-          <option>Action</option>
-          <option>Biography</option>
-          <option>History</option>
-          <option>Horror</option>
-          <option>Kids</option>
-          <option>Learning</option>
-          <option>Sci-Fi</option>
+        <select name="category">
+          {categories.map(category => (
+            <option key={category}>{category}</option>
+          ))}
         </select>
         <button type="submit" onSubmit={this.handleSubmit}>Submit</button>
       </form>
@@ -57,6 +56,10 @@ const mapDispatchToProps = dispatch => ({
     dispatch(createBook(book));
   },
 });
+
+BookForm.propTypes = {
+  createBook: propTypes.func.isRequired,
+};
 
 const BookFormConnected = connect(null, mapDispatchToProps)(BookForm);
 
