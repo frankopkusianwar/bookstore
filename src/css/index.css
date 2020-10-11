@@ -1,6 +1,7 @@
 body {
   background: rgb(240, 238, 238);
 }
+
 .header {
   display: flex;
   padding: 18px;
@@ -46,9 +47,13 @@ ul li a {
   margin-bottom: 100px;
 }
 
+.form h3 {
+  color: #555;
+}
+
 input,
 select {
-  padding: 16px 32px;
+  padding: 10px 15px;
   margin-right: 20px;
 }
 
@@ -67,10 +72,11 @@ select:focus {
 
 button {
   border: none;
-  /* padding: 16px 32px; */
   text-decoration: none;
-  /* margin: 4px 2px; */
   cursor: pointer;
+  background-color:  #0290ff;
+  color: #fff;
+  padding: 10px 45px;
 }
 
 .remove {
