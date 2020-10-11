@@ -1,5 +1,5 @@
 body {
-  background: rgb(226, 225, 225);
+  background: rgb(240, 238, 238);
 }
 .header {
   display: flex;
@@ -86,7 +86,7 @@ button {
 
 .book {
   display: grid;
-  grid-template-columns: 2fr 2fr 2fr;
+  grid-template-columns: 3fr 2fr 2fr;
   border: 0.2px solid rgb(170, 169, 169);
   background: white;
   margin: 10px 0;
@@ -104,10 +104,26 @@ button {
   border-right: 0.2px solid lightgray;
   padding-right: 100px;
 }
-.percent-text small:first-child {
+.percent-text {
+  margin-top: 10px;
+}
+.percent-text small {
   font-size: 30px;
 }
 
+.percent-text p {
+  color: #999;
+  margin-top: 0;
+  font-size: 12px;
+}
+
+.author {
+  color: #0290ff;
+}
+
+.buttons {
+  margin-top: 15px;
+}
 .buttons a {
   text-decoration: none;
   color: #0290ff;
@@ -119,4 +135,24 @@ button {
 
 .buttons a:last-child {
   padding-left: 5px;
+}
+
+.chapter button {
+  background-color:  #0290ff;
+  color: #fff;
+  padding: 5px 20px;
+}
+
+.chapter small {
+  color: #999;
+  font-size: 11px;
+}
+
+.category1 {
+  color: #999;
+  font-weight: bolder;
+}
+
+.book-tt {
+  margin: 0;
 }

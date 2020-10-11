@@ -5,9 +5,9 @@ import sixtyfour from '../assets/sixtyfour.PNG'
 const Book = ({ book, removeBook }) => (
   <div className="book">
     <div>
-      <small>{ book.category }</small>
-      <h3>{ book.title }</h3>
-      <small>Suzanne Collins</small>
+      <small className="category1">{ book.category }</small>
+      <h3 className="book-tt">{ book.title }</h3>
+      <small className="author">Suzanne Collins</small>
       <div className="buttons">
         <a href="#">Comments</a>
         <a href="#" className="remove" onClick={() => removeBook(book)}>Remove</a>
@@ -21,8 +21,8 @@ const Book = ({ book, removeBook }) => (
         <p>Completed</p>
       </div>
     </div>
-    <div>
-      <p>CURRENT CHAPTER</p>
+    <div className="chapter">
+      <small>CURRENT CHAPTER</small>
       <p>Chapter 17</p>
       <button type='subit'>UPDATE PROGRESS</button>
     </div>
