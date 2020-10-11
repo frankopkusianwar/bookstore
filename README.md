@@ -11,7 +11,7 @@ In this project I build a book store app using REACT and REDUX
 - Filter books by category
 
 ## Bookstore Page
-![screenshot](./assets/screenshot.PNG)
+![screenshot](../assets/screenshot.PNG)
 
 ## Built With
 
