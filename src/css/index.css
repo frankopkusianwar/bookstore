@@ -38,17 +38,31 @@ ul li a {
   color: #999;
 }
 
+.form {
+  width: 80%;
+  margin: auto;
+  border-top: 2px solid lightgray;
+  padding-top: 8px;
+  margin-bottom: 100px;
+}
+
 input,
 select {
   padding: 16px 32px;
-  margin: 4px 2px;
+  margin-right: 20px;
+}
+
+input {
+  width: 50%;
+}
+
+select {
+  width: 30%;
 }
 
 input[type=text]:focus,
 select:focus {
-  background-color: #4caf50;
   border: 3px solid #555;
-  color: white;
 }
 
 button {
@@ -60,7 +74,9 @@ button {
 }
 
 .remove {
-  
+  border-left: 1px solid lightgray;
+  border-right: 1px solid lightgray;
+  padding: 0 5px;
 }
 
 .bookList {
@@ -69,10 +85,38 @@ button {
 }
 
 .book {
-  display: flex;
-  justify-content: space-between;
+  display: grid;
+  grid-template-columns: 2fr 2fr 2fr;
   border: 0.2px solid rgb(170, 169, 169);
   background: white;
   margin: 10px 0;
   padding: 10px;
+  border-radius: 5px;
+}
+
+.percent {
+  display: flex;
+  margin-top: 18px;
+}
+
+.percent-text {
+  margin-left: 5px;
+  border-right: 0.2px solid lightgray;
+  padding-right: 100px;
+}
+.percent-text small:first-child {
+  font-size: 30px;
+}
+
+.buttons a {
+  text-decoration: none;
+  color: #0290ff;
+}
+
+.buttons a:first-child {
+  padding-right: 5px;
+}
+
+.buttons a:last-child {
+  padding-left: 5px;
 }

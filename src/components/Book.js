@@ -8,18 +8,17 @@ const Book = ({ book, removeBook }) => (
       <small>{ book.category }</small>
       <h3>{ book.title }</h3>
       <small>Suzanne Collins</small>
-      <button type="submit" className="remove" onClick={() => removeBook(book)}>Remove Book</button>
-      <div>
-        <small>Comments</small>
-        <small>Remove</small>
-        <small>Edit</small>
+      <div className="buttons">
+        <a href="#">Comments</a>
+        <a href="#" className="remove" onClick={() => removeBook(book)}>Remove</a>
+        <a href="#">Edit</a>
       </div>
     </div>
-    <div>
-      <img src={sixtyfour} alt="percentage"/>
-      <div>
-        <p>64%</p>
-        <small>Completed</small>
+    <div className="percent">
+      <div><img src={sixtyfour} alt="percentage"/></div>
+      <div className="percent-text">
+        <small>64%</small>
+        <p>Completed</p>
       </div>
     </div>
     <div>
