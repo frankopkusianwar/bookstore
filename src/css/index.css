@@ -14,7 +14,7 @@ body {
   color: #0290ff;
 }
 
-.profile{
+.profile {
   margin-left: auto;
   margin-top: 8px;
 }
@@ -74,7 +74,7 @@ button {
   border: none;
   text-decoration: none;
   cursor: pointer;
-  background-color:  #0290ff;
+  background-color: #0290ff;
   color: #fff;
   padding: 10px 45px;
 }
@@ -113,10 +113,9 @@ button {
   margin-left: 5px;
   border-right: 0.2px solid lightgray;
   padding-right: 100px;
-}
-.percent-text {
   margin-top: 10px;
 }
+
 .percent-text small {
   font-size: 30px;
 }
@@ -134,9 +133,15 @@ button {
 .buttons {
   margin-top: 15px;
 }
+
 .buttons small {
   color: #0290ff;
   cursor: pointer;
+}
+
+.chapter small {
+  color: #999;
+  font-size: 11px;
 }
 
 .buttons small:first-child {
@@ -148,14 +153,9 @@ button {
 }
 
 .chapter button {
-  background-color:  #0290ff;
+  background-color: #0290ff;
   color: #fff;
   padding: 5px 20px;
-}
-
-.chapter small {
-  color: #999;
-  font-size: 11px;
 }
 
 .category1 {
