@@ -1,5 +1,5 @@
 body {
-  background: rgb(240, 238, 238);
+  background: rgba(0, 0, 0, 0.05);
 }
 
 .panel-bg {
@@ -62,41 +62,52 @@ ul li small {
 .form {
   width: 80%;
   margin: auto;
-  border-top: 2px solid lightgray;
+  border-top: 2px solid #e8e8e8;
   padding-top: 8px;
   margin-bottom: 100px;
 }
 
 .form h3 {
-  color: #555;
-}
-
-input,
-select {
-  padding: 10px 15px;
-  margin-right: 20px;
+  width: 174px;
+  height: 24px;
+  font-family: Montserrat;
+  font-size: 20px;
+  font-weight: bold;
+  letter-spacing: -0.18px;
+  color: #888888;
 }
 
 input {
-  width: 50%;
+  width: 650px;
+  padding: 0 10px;
+  height: 45px;
+  border-radius: 4px;
+  border: solid 1px #e8e8e8;
+  background-color: #ffffff;
+  margin-right: 10px;
 }
 
 select {
-  width: 30%;
-}
-
-input[type=text]:focus,
-select:focus {
-  border: 3px solid #555;
+  width: 270px;
+  height: 45px;
+  padding: 0 10px;
+  margin-right: 10px;
+  border-radius: 4px;
+  border: solid 1px #e8e8e8;
+  background-color: #ffffff;
 }
 
 button {
   border: none;
-  text-decoration: none;
   cursor: pointer;
   background-color: #0290ff;
   color: #fff;
-  padding: 10px 45px;
+  padding: 10px 30px;
+  font-family: RobotoSlab;
+  font-size: 13px;
+  font-weight: bold;
+  letter-spacing: 0.5px;
+  text-align: center;
 }
 
 .remove {
@@ -104,9 +115,9 @@ button {
   border-right: 1px solid lightgray;
   padding: 0 5px;
   background: transparent;
-  font-size: 12px;
-  color: #0290ff;
+  font-size: 14px;
   align-self: center;
+  color: #4386bf;
 }
 
 .bookList {
@@ -114,54 +125,86 @@ button {
   margin: 20px auto;
 }
 
-.book {
+.lesson-pannel {
   display: grid;
   grid-template-columns: 3fr 2fr 2fr;
-  border: 0.2px solid rgb(170, 169, 169);
-  background: white;
-  margin: 10px 0;
-  padding: 10px;
-  border-radius: 5px;
+  margin: 20px 0px;
+  padding: 32px 27px;
+  border-radius: 4px;
+  border: solid 1px #e8e8e8;
+  background: #ffffff;
 }
 
 .percent {
   display: flex;
-  margin-top: 18px;
+  margin-top: 30px;
 }
 
 .percent-text {
   margin-left: 5px;
-  border-right: 0.2px solid lightgray;
+  border-right: 2px solid #e8e8e8;;
   padding-right: 100px;
   margin-top: 10px;
 }
 
 .percent-text small {
-  font-size: 30px;
+  width: 68px;
+  height: 39px;
+  font-family: Montserrat;
+  font-size: 32px;
 }
 
 .percent-text p {
   color: #999;
   margin-top: 0;
-  font-size: 12px;
+  width: 80px;
+  height: 18px;
+  opacity: 0.5;
+  font-family: Montserrat;
+  font-size: 14px;
 }
 
 .author {
-  color: #0290ff;
+  width: 93px;
+  height: 19px;
+  font-family: RobotoSlab;
+  font-size: 14px;
+  font-weight: 300;
+  color: #4386bf;
 }
 
 .buttons {
-  margin-top: 15px;
+  margin-top: 25px;
 }
 
 .buttons small {
-  color: #0290ff;
+  width: 73px;
+  height: 19px;
+  font-family: RobotoSlab;
+  font-size: 14px;
+  font-weight: 300;
+  color: #4386bf;
   cursor: pointer;
 }
 
 .chapter small {
   color: #999;
   font-size: 11px;
+  width: 126px;
+  height: 18px;
+  opacity: 0.5;
+  font-family: RobotoSlab;
+  font-size: 13px;
+  font-weight: 300;
+}
+
+.chapter p {
+  width: 212px;
+  height: 21px;
+  font-family: RobotoSlab;
+  font-size: 16px;
+  font-weight: 300;
+  letter-spacing: -0.4px;
 }
 
 .buttons small:first-child {
@@ -172,17 +215,42 @@ button {
   padding-left: 5px;
 }
 
+.chapter {
+  padding-left: 50px;
+}
+
 .chapter button {
-  background-color: #0290ff;
+  background: #0290ff;
   color: #fff;
   padding: 5px 20px;
+  margin-top: 20px;
+  width: 184px;
+  height: 33px;
+  border-radius: 3px;
+  font-family: RobotoSlab;
+  font-size: 13px;
+  font-weight: 300;
+  letter-spacing: 0.5px;
+  text-align: center;
 }
 
 .category1 {
   color: #999;
-  font-weight: bolder;
+  width: 49px;
+  height: 18px;
+  opacity: 0.5;
+  font-family: Montserrat;
+  font-size: 14px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
 }
 
 .book-tt {
-  margin: 0;
+  font-family: RobotoSlab;
+  font-size: 22px;
+  font-weight: bold;
+  letter-spacing: -0.2px;
 }

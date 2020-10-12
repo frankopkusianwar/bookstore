@@ -3,7 +3,7 @@ import propTypes from 'prop-types';
 import sixtyfour from '../assets/sixtyfour.PNG';
 
 const Book = ({ book, removeBook }) => (
-  <div className="book">
+  <div className="lesson-pannel">
     <div>
       <small className="category1">{ book.category }</small>
       <h3 className="book-tt">{ book.title }</h3>
