@@ -6,15 +6,14 @@ body {
   display: flex;
   padding: 18px;
   justify-content: center;
-  border-bottom: 0.2px solid lightgray;
-  background-color: #ffffff;
-  border-bottom: 0.2px solid lightgray;
+  border-bottom: 1px solid lightgray;
+  background-color: #fff;
 }
 
 .Bookstore-CMS {
   width: 240px;
   height: 37px;
-  font-family: Montserrat;
+  font-family: Montserrat, sans-serif;
   font-size: 30px;
   font-weight: bold;
   font-stretch: normal;
@@ -41,12 +40,8 @@ ul li {
 ul li small {
   width: 59px;
   height: 16px;
-  font-family: Montserrat;
+  font-family: Montserrat, sans-serif;
   font-size: 13px;
-  font-weight: normal;
-  font-stretch: normal;
-  font-style: normal;
-  line-height: normal;
   letter-spacing: 1.9px;
   color: #121212;
   padding: 0 20px;
@@ -70,20 +65,20 @@ ul li small {
 .form h3 {
   width: 174px;
   height: 24px;
-  font-family: Montserrat;
+  font-family: Montserrat, sans-serif;
   font-size: 20px;
   font-weight: bold;
   letter-spacing: -0.18px;
-  color: #888888;
+  color: #888;
 }
 
 input {
-  width: 650px;
+  width: 645px;
   padding: 0 10px;
   height: 45px;
   border-radius: 4px;
   border: solid 1px #e8e8e8;
-  background-color: #ffffff;
+  background-color: #fff;
   margin-right: 10px;
 }
 
@@ -94,7 +89,7 @@ select {
   margin-right: 10px;
   border-radius: 4px;
   border: solid 1px #e8e8e8;
-  background-color: #ffffff;
+  background-color: #fff;
 }
 
 button {
@@ -103,7 +98,7 @@ button {
   background-color: #0290ff;
   color: #fff;
   padding: 10px 30px;
-  font-family: RobotoSlab;
+  font-family: RobotoSlab, sans-serif;
   font-size: 13px;
   font-weight: bold;
   letter-spacing: 0.5px;
@@ -128,11 +123,11 @@ button {
 .lesson-pannel {
   display: grid;
   grid-template-columns: 3fr 2fr 2fr;
-  margin: 20px 0px;
+  margin: 20px 0;
   padding: 32px 27px;
   border-radius: 4px;
   border: solid 1px #e8e8e8;
-  background: #ffffff;
+  background: #fff;
 }
 
 .percent {
@@ -142,7 +137,7 @@ button {
 
 .percent-text {
   margin-left: 5px;
-  border-right: 2px solid #e8e8e8;;
+  border-right: 2px solid #e8e8e8;
   padding-right: 100px;
   margin-top: 10px;
 }
@@ -150,7 +145,7 @@ button {
 .percent-text small {
   width: 68px;
   height: 39px;
-  font-family: Montserrat;
+  font-family: Montserrat, sans-serif;
   font-size: 32px;
 }
 
@@ -160,14 +155,14 @@ button {
   width: 80px;
   height: 18px;
   opacity: 0.5;
-  font-family: Montserrat;
+  font-family: Montserrat, sans-serif;
   font-size: 14px;
 }
 
 .author {
   width: 93px;
   height: 19px;
-  font-family: RobotoSlab;
+  font-family: RobotoSlab, sans-serif;
   font-size: 14px;
   font-weight: 300;
   color: #4386bf;
@@ -180,7 +175,7 @@ button {
 .buttons small {
   width: 73px;
   height: 19px;
-  font-family: RobotoSlab;
+  font-family: RobotoSlab, sans-serif;
   font-size: 14px;
   font-weight: 300;
   color: #4386bf;
@@ -189,11 +184,10 @@ button {
 
 .chapter small {
   color: #999;
-  font-size: 11px;
   width: 126px;
   height: 18px;
   opacity: 0.5;
-  font-family: RobotoSlab;
+  font-family: RobotoSlab, sans-serif;
   font-size: 13px;
   font-weight: 300;
 }
@@ -201,7 +195,7 @@ button {
 .chapter p {
   width: 212px;
   height: 21px;
-  font-family: RobotoSlab;
+  font-family: RobotoSlab, sans-serif;
   font-size: 16px;
   font-weight: 300;
   letter-spacing: -0.4px;
@@ -227,7 +221,7 @@ button {
   width: 184px;
   height: 33px;
   border-radius: 3px;
-  font-family: RobotoSlab;
+  font-family: RobotoSlab, sans-serif;
   font-size: 13px;
   font-weight: 300;
   letter-spacing: 0.5px;
@@ -239,7 +233,7 @@ button {
   width: 49px;
   height: 18px;
   opacity: 0.5;
-  font-family: Montserrat;
+  font-family: Montserrat, sans-serif;
   font-size: 14px;
   font-weight: bold;
   font-stretch: normal;
@@ -249,7 +243,7 @@ button {
 }
 
 .book-tt {
-  font-family: RobotoSlab;
+  font-family: RobotoSlab, sans-serif;
   font-size: 22px;
   font-weight: bold;
   letter-spacing: -0.2px;
