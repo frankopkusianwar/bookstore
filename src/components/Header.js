@@ -3,8 +3,8 @@ import profile from '../assets/profile.PNG';
 
 const Header = () => (
   <div id="App">
-    <div className="header">
-      <h1>BOOK STORE CMS</h1>
+    <div className="panel-bg">
+      <h1 className="Bookstore-CMS">Bookstore CMS</h1>
       <ul>
         <li><small>Books</small></li>
         <li><small className="category">Categories</small></li>
