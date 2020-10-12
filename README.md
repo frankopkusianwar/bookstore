@@ -6,14 +6,16 @@ In this project I build a book store app using REACT and REDUX
 
 ## FEATURES
 
-- organize and manage bookstore
+- Add books to store
+- Remove book from store
+- Filter books by category
 
 ## Bookstore Page
-![screenshot]()
+![screenshot](./src/assets/screenshot.PNG)
 
 ## Built With
 
-- React
+- React-Redux
 
 ## Live Demo
 

@@ -2,7 +2,7 @@ import React from 'react';
 import propTypes from 'prop-types';
 
 const CategoryFilter = ({ filter }) => {
-  const categories = ['Action', 'Biography', 'History', 'Horror', 'Kids', 'Learning', 'Sci-Fi'];
+  const categories = ['Action', 'Biography', 'History', 'Horror', 'Kids', 'Learning', 'SCI-FI'];
 
   const handleFilter = ({ target }) => {
     filter(target.value);

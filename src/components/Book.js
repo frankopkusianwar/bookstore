@@ -1,13 +1,32 @@
 import React from 'react';
 import propTypes from 'prop-types';
+import sixtyfour from '../assets/sixtyfour.PNG';
 
 const Book = ({ book, removeBook }) => (
-  <tr>
-    <td>{ book.id }</td>
-    <td>{ book.title }</td>
-    <td>{ book.category }</td>
-    <td><button type="submit" className="remove" onClick={() => removeBook(book)}>Remove Book</button></td>
-  </tr>
+  <div className="lesson-pannel">
+    <div>
+      <small className="category1">{ book.category }</small>
+      <h3 className="book-tt">{ book.title }</h3>
+      <small className="author">Suzanne Collins</small>
+      <div className="buttons">
+        <small>Comments</small>
+        <button type="submit" className="remove" onClick={() => removeBook(book)}>Remove</button>
+        <small>Edit</small>
+      </div>
+    </div>
+    <div className="percent">
+      <div><img src={sixtyfour} alt="percentage" /></div>
+      <div className="percent-text">
+        <small>64%</small>
+        <p>Completed</p>
+      </div>
+    </div>
+    <div className="chapter">
+      <small>CURRENT CHAPTER</small>
+      <p>Chapter 17</p>
+      <button type="submit">UPDATE PROGRESS</button>
+    </div>
+  </div>
 );
 
 Book.propTypes = {
