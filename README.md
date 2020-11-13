@@ -47,6 +47,10 @@ To get a local copy up and running follow these simple example steps.
 - Type ```http://localhost:3000/``` in the browser tab.
 - Now you can manage the bookstore.
 
+### Tests
+
+- To run tests `npm test`
+
 ## Author
 
 - Okiror Frank
